@@ -9,7 +9,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.8.1"
 prompt = "^0.4.1"
 
 [tool.poetry.scripts]
@@ -17,6 +17,7 @@ brain-games = "brain_games.scripts.brain_games:main"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.17.1"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
