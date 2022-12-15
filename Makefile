@@ -12,5 +12,7 @@ lint:
 	poetry run flake8 brain_games
 brain-even:
 	poetry run brain-even
+brain-calc:
+	poetry run brain-calc
 reinstall:
 	python3 -m pip install --user --force-reinstall dist/*.whl
