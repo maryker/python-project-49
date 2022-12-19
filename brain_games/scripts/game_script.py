@@ -8,6 +8,10 @@ def greet_user():
     return name
 
 
+def ask_question(q_tuple):
+    print('Question:', *q_tuple)
+
+
 def check_answer(answer, cor_answer, name):
     if cor_answer == answer:
         print("Correct!")

@@ -1,17 +1,20 @@
 import prompt
 from random import randint, choice
-from brain_games.scripts.game_script import greet_user, check_answer, congrats
+from brain_games.scripts.game_script import greet_user, check_answer
+from brain_games.scripts.game_script import congrats, ask_question
 
 
 def game_calc():
     name = greet_user()
+    print('What is the result of the expression?')
     operations = ('+', '-', '*')
     count = 0
     while True:
         rand_a = randint(1, 30)
         rand_b = randint(1, 30)
         rand_op = choice(operations)
-        print(rand_a, rand_op, rand_b)
+        question = (rand_a, rand_op, rand_b)
+        ask_question(question)
         cor_answer = correct_answer(rand_op, rand_a, rand_b)
         answer = prompt.integer('Your answer: ')
         if check_answer(answer, cor_answer, name):
@@ -23,7 +26,8 @@ def game_calc():
             break
 
 
-def correct_answer(operator, num1, num2):
+def correct_answer(question):
+    num1, operator, num2 = question
     if operator == '+':
         return num1 + num2
     elif operator == '-':

@@ -1,13 +1,15 @@
 from random import randint
-from brain_games.scripts.game_script import greet_user, check_answer, congrats
+from brain_games.scripts.game_script import greet_user, check_answer
+from brain_games.scripts.game_script import congrats, ask_question
 
 
 def game_even():
     name = greet_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count != 3:
         rand_num = randint(1, 100)
-        print(f'Question: {rand_num}')
+        ask_question((rand_num,))
         answer = input('Your answer: ')
         answers = ('yes', 'no')
         cor_answer = answers[rand_num % 2]
