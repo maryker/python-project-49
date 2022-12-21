@@ -15,7 +15,7 @@ def game_calc():
         rand_op = choice(OPERATIONS)
         question = (rand_a, rand_op, rand_b)
         ask_question(question)
-        cor_answer = correct_answer(rand_op, rand_a, rand_b)
+        cor_answer = correct_answer(question)
         answer = prompt.integer('Your answer: ')
         if check_answer(answer, cor_answer, name):
             count += 1
