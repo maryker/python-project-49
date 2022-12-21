@@ -7,12 +7,12 @@ from brain_games.scripts.game_script import congrats, ask_question
 def game_calc():
     name = greet_user()
     print('What is the result of the expression?')
-    operations = ('+', '-', '*')
+    OPERATIONS = ('+', '-', '*')
     count = 0
     while True:
         rand_a = randint(1, 30)
         rand_b = randint(1, 30)
-        rand_op = choice(operations)
+        rand_op = choice(OPERATIONS)
         question = (rand_a, rand_op, rand_b)
         ask_question(question)
         cor_answer = correct_answer(rand_op, rand_a, rand_b)
