@@ -18,5 +18,7 @@ brain-gcd:
 	poetry run brain-gcd
 brain-progression:
 	poetry run brain-progression
+brain-prime:
+	poetry run brain-prime
 reinstall:
 	python3 -m pip install --user --force-reinstall dist/*.whl
