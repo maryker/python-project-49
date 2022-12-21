@@ -6,7 +6,7 @@ from brain_games.scripts.game_script import congrats, ask_question
 
 def game_gcd():
     name = greet_user()
-    print("Find the greatest common"
+    print("Find the greatest common "
           "divisor of given numbers.")
     count = 0
     while True:
