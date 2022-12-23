@@ -8,8 +8,8 @@ def greet_user():
     return name
 
 
-def ask_question(q_tuple):
-    print('Question:', *q_tuple)
+def ask_question(question):
+    print('Question:', *question)
 
 
 def check_answer(answer, cor_answer, name):

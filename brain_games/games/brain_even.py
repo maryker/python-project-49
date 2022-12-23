@@ -11,8 +11,8 @@ def game_even():
         rand_num = randint(1, 100)
         ask_question((rand_num,))
         answer = input('Your answer: ')
-        answers = ('yes', 'no')
-        cor_answer = answers[rand_num % 2]
+        ANSWERS = ('yes', 'no')
+        cor_answer = ANSWERS[rand_num % 2]
         if check_answer(answer, cor_answer, name):
             count += 1
         else:
