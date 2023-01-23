@@ -1,12 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "short games with numbers"
 authors = ["maryker <mashalipatowa@yandex.ru>"]
 readme = "README.md"
+classifiers = [
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.8",
+    "License :: Free For Home Use"
+]
 packages = [
 {include = "brain_games"}
 ]
+repository = "https://github.com/maryker/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.8.1"

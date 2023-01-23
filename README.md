@@ -11,13 +11,33 @@ You can test yourself with this simple games with numbers. Each game will stop a
 - pip
 - poetry
 
+
 ### Installation
-To install this package use this commands:
+To  install requierd dependencies use command
 ```
 make install
+```
+or
+```
+poetry install
+```
+To build the source and wheels archive use
+```
 make build
+```
+or
+```
+poetry build
+```
+To  install package use
+```
 make package-install
 ```
+or
+```
+python3 -m pip install --user dist/*.whl
+```
+
 You can watch installation process down bellow.
 
 ### Game discriptions
@@ -51,7 +71,7 @@ To start this game use:
 [![asciicast](https://asciinema.org/a/CuY8YM0MYASsPtfRrdKh71W68.svg)](https://asciinema.org/a/CuY8YM0MYASsPtfRrdKh71W68)
 
 ### brain-calc demonstration
-[![asciicast](https://asciinema.org/a/DteStddecAjx2TxA3KsRkyI13.svg)](https://asciinema.org/a/DteStddecAjx2TxA3KsRkyI13)
+[![asciicast](https://asciinema.org/a/aO8Azr32N3R0JQVzA4on5Wbls.svg)](https://asciinema.org/a/aO8Azr32N3R0JQVzA4on5Wbls)
 
 ### brain-gcd demonstration
 [![asciicast](https://asciinema.org/a/AhNC5sQGMWkjj5IvQAc9weQwG.svg)](https://asciinema.org/a/AhNC5sQGMWkjj5IvQAc9weQwG)
