@@ -1,4 +1,5 @@
-from brain_games.games.brain_even import get_question_and_answer, game_description
+from brain_games.games.brain_even import get_question_and_answer
+from brain_games.games.brain_even import game_description
 from brain_games.game_script import play_game
 
 

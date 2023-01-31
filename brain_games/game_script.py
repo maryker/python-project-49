@@ -1,6 +1,7 @@
 import prompt
 max_rounds = 3
 
+
 def play_game(make_question, game_description):
     name = greet_user()
     print(game_description)
@@ -14,7 +15,7 @@ def play_game(make_question, game_description):
             count += 1
         else:
             print(f"'{answer}' is wrong answer ;(. ",
-              f"Correct answer was '{correct_answer}'")
+                  f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {name}!")
             break
         if count == max_rounds:
