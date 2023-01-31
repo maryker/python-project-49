@@ -2,17 +2,16 @@ from random import randint, choice
 from operator import add, sub, mul
 
 
-def game_descript():
-    print('What is the result of the expression?')
+game_description = 'What is the result of the expression?'
 
 
-def game_calc():
-    OPERATIONS = ('+', '-', '*')
+def get_question_and_answer():
+    operations = ('+', '-', '*')
     rand_a = randint(1, 30)
     rand_b = randint(1, 30)
-    rand_op = choice(OPERATIONS)
-    question = (rand_a, rand_op, rand_b)
-    return question, find_answer(question)
+    rand_op = choice(operations)
+    question = [rand_a, rand_op, rand_b]
+    return ' '.join([str(i) for i in question]), str(find_answer(question))
 
 
 def find_answer(question):

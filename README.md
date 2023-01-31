@@ -37,6 +37,10 @@ or
 ```
 python3 -m pip install --user dist/*.whl
 ```
+To install dev-dependences use
+```
+poetry install --only dev
+```
 
 You can watch installation process down bellow.
 

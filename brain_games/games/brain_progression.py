@@ -1,11 +1,10 @@
 from random import randint
 
 
-def game_descript():
-    print('What number is missing in the progression?')
+game_description = 'What number is missing in the progression?'
 
 
-def game_progression():
+def get_question_and_answer():
     start = randint(1, 50)
     step = randint(2, 10)
     length = randint(5, 10)
@@ -17,4 +16,4 @@ def game_progression():
     correct_answer = progression[rand_index]
     progression.remove(correct_answer)
     progression.insert(rand_index, '..')
-    return progression, correct_answer
+    return ' '.join([str(i) for i in progression]), str(correct_answer)
