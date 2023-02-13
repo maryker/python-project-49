@@ -10,12 +10,10 @@ def get_question_and_answer():
     rand_a = randint(1, 30)
     rand_b = randint(1, 30)
     rand_op = choice(operations)
-    question = [rand_a, rand_op, rand_b]
-    return ' '.join([str(i) for i in question]), str(find_answer(question))
+    return f'{rand_a} {rand_op} {rand_b}', str(find_answer(rand_a, rand_op, rand_b))
 
 
-def find_answer(question):
-    num1, operator, num2 = question
+def find_answer(num1, operator, num2):
     if operator == '+':
         return add(num1, num2)
     elif operator == '-':

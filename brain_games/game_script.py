@@ -1,13 +1,13 @@
 import prompt
-max_rounds = 3
+MAX_ROUNDS = 3
 
 
-def play_game(make_question, game_description):
+def play_game(game):
     name = greet_user()
-    print(game_description)
+    print(game.GAME_DESCRIPTION)
     count = 0
     while True:
-        question, correct_answer = make_question()
+        question, correct_answer = game.get_question_and_answer()
         print(f'Question: {question}')
         answer = input('Your answer: ')
         if correct_answer == answer:
@@ -18,7 +18,7 @@ def play_game(make_question, game_description):
                   f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {name}!")
             break
-        if count == max_rounds:
+        if count == MAX_ROUNDS:
             print(f'Congratulations, {name}!')
             break
 

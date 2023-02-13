@@ -7,8 +7,7 @@ GAME_DESCRIPTION = "Find the greatest common divisor of given numbers."
 def get_question_and_answer():
     rand_a = randint(1, 100)
     rand_b = randint(1, 100)
-    question = [rand_a, rand_b]
-    return ' '.join([str(i) for i in question]), str(find_gcd(rand_a, rand_b))
+    return f'{rand_a} {rand_b}', str(find_gcd(rand_a, rand_b))
 
 
 def find_gcd(num1, num2):

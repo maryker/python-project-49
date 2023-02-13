@@ -1,10 +1,9 @@
-from brain_games.games.brain_even import get_question_and_answer
-from brain_games.games.brain_even import GAME_DESCRIPTION
+from brain_games.games import brain_even
 from brain_games.game_script import play_game
 
 
 def main():
-    play_game(get_question_and_answer, GAME_DESCRIPTION)
+    play_game(brain_even)
 
 
 if __name__ == '__main__':
