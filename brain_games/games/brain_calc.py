@@ -10,7 +10,8 @@ def get_question_and_answer():
     rand_a = randint(1, 30)
     rand_b = randint(1, 30)
     rand_op = choice(operations)
-    return f'{rand_a} {rand_op} {rand_b}', str(find_answer(rand_a, rand_op, rand_b))
+    return f'{rand_a} {rand_op} {rand_b}', \
+           str(find_answer(rand_a, rand_op, rand_b))
 
 
 def find_answer(num1, operator, num2):
